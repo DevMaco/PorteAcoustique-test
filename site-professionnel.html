@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porte Acoustique | Solutions Professionnelles de Portes Acoustiques</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #0f3460;
+            --accent: #c59d5f;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--primary);
+        }
+
+        .display-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.75rem 5%;
+            font-size: 0.875rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            padding: 1.25rem 5%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-accent {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9375rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--white);
+            padding: 0.875rem 2rem;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .btn-primary:hover {
+            background: #b38a4a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(197, 157, 95, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            padding: 0.875rem 2rem;
+            border: 2px solid var(--primary);
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(15, 52, 96, 0.9) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            padding: 0 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(197, 157, 95, 0.15);
+            color: var(--accent);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(197, 157, 95, 0.3);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            max-width: 800px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--white);
+            padding: 3rem 5%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: -4rem;
+            position: relative;
+            z-index: 20;
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            font-size: 0.9375rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 5%;
+        }
+
+        .section-header {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            background: var(--light-bg);
+        }
+
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent), #d4af6a);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.375rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Products Section */
+        .products {
+            background: var(--white);
+        }
+
+        .products-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(-8px);
+        }
+
+        .product-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .product-tagline {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9375rem;
+        }
+
+        .product-body {
+            padding: 2.5rem;
+        }
+
+        .product-price {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .product-specs {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .product-specs li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-specs li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9375rem;
+        }
+
+        .spec-value {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+
+        /* Process Section */
+        .process {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .process .section-subtitle {
+            color: var(--accent);
+        }
+
+        .process .section-title {
+            color: var(--white);
+        }
+
+        .process .section-description {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .process-timeline {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: var(--accent);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .process-step h3 {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .process-step p {
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+        }
+
+        /* Technical Section */
+        .technical {
+            background: var(--light-bg);
+        }
+
+        .technical-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .technical-image {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .technical-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .technical-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .technical-features {
+            list-style: none;
+        }
+
+        .technical-features li {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .technical-features li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-check {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            margin-top: 0.25rem;
+        }
+
+        .feature-content h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .feature-content p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .cert-badge {
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .cert-badge:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .cert-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cert-badge h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cert-badge p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        /* Projects Gallery */
+        .projects {
+            background: var(--light-bg);
+        }
+
+        .projects-grid {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            background: var(--white);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26, 26, 46, 0.95), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay h4 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-overlay p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 5rem;
+        }
+
+        .contact-info {
+            background: var(--light-bg);
+            padding: 3rem;
+            border-radius: 8px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-item h4 {
+            font-size: 0.875rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .contact-item p {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            font-size: 0.9375rem;
+            color: var(--text);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(197, 157, 95, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 4rem 5% 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links h4 {
+            color: var(--white);
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .features-grid,
+            .products-grid,
+            .process-timeline {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .technical-content,
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                display: none;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                height: 100vh;
+                background: var(--white);
+                flex-direction: column;
+                padding: 5rem 2rem;
+                gap: 2rem;
+                transition: right 0.4s ease;
+                box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+                align-items: flex-start;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .features-grid,
+            .products-grid,
+            .process-timeline,
+            .stats-container,
+            .cert-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                height: 70vh;
+            }
+
+            section {
+                padding: 4rem 5%;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-bar-left">
+                <div class="top-bar-item">
+                    <span>📞</span>
+                    <span>+33 (0)1 23 45 67 89</span>
+                </div>
+                <div class="top-bar-item">
+                    <span>✉️</span>
+                    <span>contact@porteacoustique.fr</span>
+                </div>
+            </div>
+            <div class="top-bar-item">
+                <span>⏰ Lun-Ven: 9h00 - 18h00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                PORTE ACOUSTIQUE<span class="logo-accent">.</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#processus">Notre Processus</a></li>
+                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary">Demander un Devis</a>
+            <div class="mobile-menu-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-background">
+            <img src="WhatsApp_Image_2026-02-14_at_15_06_11__3_.jpeg" alt="Architecture moderne">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            
+            <h1 class="display-title">Solutions Professionnelles de Portes Acoustiques</h1>
+            <p>Leader français de l'isolation phonique haute performance pour studios, bureaux et espaces résidentiels. Expertise reconnue depuis plus de 20 ans.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">Demander un Devis Gratuit</a>
+                <a href="#produits" class="btn-secondary" style="color: white; border-color: white;">Voir nos Produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Années d'Expérience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Projets Réalisés</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">52dB</div>
+                <div class="stat-label">Isolation Maximum</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99%</div>
+                <div class="stat-label">Clients Satisfaits</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="solutions">
+        <div class="section-header fade-in">
+            <div class="section-subtitle">Pourquoi Nous Choisir</div>
+            <h2 class="section-title display-title">L'Excellence Acoustique à Votre Service</h2>
+            <p class="section-description">Nous combinons expertise technique, innovation et service client d'exception pour vous garantir des solutions acoustiques de premier ordre.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🎯</div>
+                <h3>Expertise Reconnue</h3>
+                <p>Plus de 20 ans d'expérience dans la conception et l'installation de solutions acoustiques pour professionnels et particuliers.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🏆</div>
+                <h3>Qualité Testée</h3>
+                <p>Produits testés en laboratoire et testes en laboratoire.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">⚡</div>
+                <h3>Installation Rapide</h3>
+                <p>Équipes qualifiées et processus optimisé pour une installation propre, rapide et sans perturbation de vos activités.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🔧</div>
+                <h3>Sur-Mesure</h3>
+                <p>Chaque projet est unique. Nous adaptons nos solutions à vos besoins spécifiques et contraintes architecturales.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">💎</div>
+                <h3>Finitions Premium</h3>
+                <p>Large gamme de finitions et matériaux nobles pour s'intégrer parfaitement à votre environnement.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🛡️</div>
+                <h3>Garantie 10 Ans</h3>
+                <p>Confiance totale dans nos produits avec une garantie complète de 10 ans sur les performances acoustiques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produits">
+        <div class="section-header fade-in">
+            <div class="section-subtitle">Nos Produits</div>
+            <h2 class="section-title display-title">Gamme Complète de Portes Acoustiques</h2>
+            <p class="section-description">Des solutions adaptées à chaque besoin, du studio professionnel à l'espace résidentiel.</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card fade-in">
+                <div class="product-header">
+                    <div class="product-name">Studio Pro</div>
+                    <div class="product-tagline">Performance Maximale</div>
+                </div>
+                <div class="product-body">
+                    <div class="product-price">À partir de 2 500€ HT</div>
+                    <ul class="product-specs">
+                        <li>
+                            <span class="spec-label">Isolation</span>
+                            <span class="spec-value">RW 52 dB</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Épaisseur</span>
+                            <span class="spec-value">80 mm</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Âme</span>
+                            <span class="spec-value">Multicouche densifié</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Finition</span>
+                            <span class="spec-value">Bois noble / Stratifié</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Huisserie</span>
+                            <span class="spec-value">Renforcée avec joints</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Usage</span>
+                            <span class="spec-value">Studios professionnels</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Commander</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <div class="product-header">
+                    <div class="product-name">Office Plus</div>
+                    <div class="product-tagline">Solution Professionnelle</div>
+                </div>
+                <div class="product-body">
+                    <div class="product-price">À partir de 1 800€ HT</div>
+                    <ul class="product-specs">
+                        <li>
+                            <span class="spec-label">Isolation</span>
+                            <span class="spec-value">RW 42 dB</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Épaisseur</span>
+                            <span class="spec-value">60 mm</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Âme</span>
+                            <span class="spec-value">Alvéolaire renforcé</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Finition</span>
+                            <span class="spec-value">Variété de décors</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Options</span>
+                            <span class="spec-value">Vitrée / Coupe-feu</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Usage</span>
+                            <span class="spec-value">Bureaux et espaces pro</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Commander</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in">
+                <div class="product-header">
+                    <div class="product-name">Home Confort</div>
+                    <div class="product-tagline">Confort Résidentiel</div>
+                </div>
+                <div class="product-body">
+                    <div class="product-price">À partir de 1 200€ HT</div>
+                    <ul class="product-specs">
+                        <li>
+                            <span class="spec-label">Isolation</span>
+                            <span class="spec-value">RW 35 dB</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Épaisseur</span>
+                            <span class="spec-value">50 mm</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Âme</span>
+                            <span class="spec-value">Composite isolant</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Finition</span>
+                            <span class="spec-value">Design contemporain</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Installation</span>
+                            <span class="spec-value">Rapide et propre</span>
+                        </li>
+                        <li>
+                            <span class="spec-label">Usage</span>
+                            <span class="spec-value">Maisons et appartements</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Commander</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="processus">
+        <div class="section-header fade-in">
+            <div class="section-subtitle">Notre Processus</div>
+            <h2 class="section-title display-title">4 Étapes vers l'Excellence Acoustique</h2>
+            <p class="section-description">Un accompagnement complet de la conception à l'installation finale.</p>
+        </div>
+
+        <div class="process-timeline">
+            <div class="process-step fade-in">
+                <div class="step-number">1</div>
+                <h3>Étude & Diagnostic</h3>
+                <p>Analyse approfondie de vos besoins acoustiques et visite technique sur site pour définir la solution optimale.</p>
+            </div>
+
+            <div class="process-step fade-in">
+                <div class="step-number">2</div>
+                <h3>Conception</h3>
+                <p>Élaboration des plans techniques détaillés et sélection des matériaux adaptés à votre projet.</p>
+            </div>
+
+            <div class="process-step fade-in">
+                <div class="step-number">3</div>
+                <h3>Fabrication</h3>
+                <p>Production sur-mesure dans nos ateliers avec contrôle qualité rigoureux à chaque étape.</p>
+            </div>
+
+            <div class="process-step fade-in">
+                <div class="step-number">4</div>
+                <h3>Installation</h3>
+                <p>Pose professionnelle par nos équipes qualifiées avec tests acoustiques de validation finale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section class="technical" id="technique">
+        <div class="section-header fade-in">
+            <div class="section-subtitle">Expertise Technique</div>
+            <h2 class="section-title display-title">Innovation & Performance</h2>
+            <p class="section-description">Des technologies de pointe pour une isolation acoustique sans compromis.</p>
+        </div>
+
+        <div class="technical-content">
+            <div class="technical-image fade-in">
+                <img src="WhatsApp_Image_2026-02-14_at_15_06_12.jpeg" alt="Plans techniques">
+            </div>
+
+            <div class="technical-info fade-in">
+                <h3>Caractéristiques Techniques Avancées</h3>
+                <ul class="technical-features">
+                    <li>
+                        <div class="feature-check">✓</div>
+                        <div class="feature-content">
+                            <h4>Isolation Phonique Supérieure</h4>
+                            <p>Âmes multicouches haute densité et joints périmétriques pour une atténuation sonore maximale jusqu'à 52 dB RW.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-check">✓</div>
+                        <div class="feature-content">
+                            <h4>Huisserie Acoustique Renforcée</h4>
+                            <p>Cadre en acier ou bois massif avec seuils acoustiques automatiques et joints d'étanchéité brevetés.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-check">✓</div>
+                        <div class="feature-content">
+                            <h4>Matériaux Premium</h4>
+                            <p>Sélection rigoureuse de matériaux nobles et durables pour une longévité exceptionnelle.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-check">✓</div>
+                        <div class="feature-content">
+                            <h4>Tests en Laboratoire</h4>
+                            <p>Chaque produit est testé selon les normes dans des laboratoires.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-check">✓</div>
+                        <div class="feature-content">
+                            <h4>Personnalisation Totale</h4>
+                            <p>Dimensions, finitions, couleurs et options selon vos spécifications exactes.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section class="projects" id="realisations">
+        <div class="section-header fade-in">
+            <div class="section-subtitle">Nos Réalisations</div>
+            <h2 class="section-title display-title">Projets de Référence</h2>
+            <p class="section-description">Des installations d'exception pour des clients exigeants.</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <img src="WhatsApp_Image_2026-02-14_at_15_06_13__2_.jpeg" alt="Studio professionnel">
+                <div class="project-overlay">
+                    <h4>Studio d'Enregistrement</h4>
+                    <p>Installation complète - Paris 15ème</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="WhatsApp_Image_2026-02-14_at_15_06_11__1_.jpeg" alt="Espace professionnel">
+                <div class="project-overlay">
+                    <h4>Bureaux d'Architecture</h4>
+                    <p>Portes acoustiques vitrées - Lyon</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="WhatsApp_Image_2026-02-14_at_15_06_12__1_.jpeg" alt="Installation moderne">
+                <div class="project-overlay">
+                    <h4>Résidence Privée</h4>
+                    <p>Home cinema & salle de musique - Neuilly</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="WhatsApp_Image_2026-02-14_at_15_06_11__2_.jpeg" alt="Architecture design">
+                <div class="project-overlay">
+                    <h4>Salle de Conférence</h4>
+                    <p>Porte double acoustique - La Défense</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="WhatsApp_Image_2026-02-14_at_15_06_12__2_.jpeg" alt="Espace moderne">
+                <div class="project-overlay">
+                    <h4>Cabinet Médical</h4>
+                    <p>Confidentialité acoustique - Bordeaux</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="WhatsApp_Image_2026-02-14_at_15_06_13__1_.jpeg" alt="Installation technique">
+                <div class="project-overlay">
+                    <h4>Salle de Répétition</h4>
+                    <p>École de musique - Marseille</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header fade-in">
+            <div class="section-subtitle">Contactez-Nous</div>
+            <h2 class="section-title display-title">Parlons de Votre Projet</h2>
+            <p class="section-description">Notre équipe d'experts est à votre écoute pour étudier vos besoins.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info fade-in">
+                <h3>Informations de Contact</h3>
+                
+                <div class="contact-item">
+                    <h4>Siège Social</h4>
+                    <p>123 Avenue de l'Acoustique<br>75015 Paris, France</p>
+                </div>
+
+                <div class="contact-item">
+                    <h4>Téléphone</h4>
+                    <p>+33 (0)1 23 45 67 89<br>Du lundi au vendredi<br>9h00 - 18h00</p>
+                </div>
+
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>contact@porteacoustique.fr<br>devis@porteacoustique.fr<br>support@porteacoustique.fr</p>
+                </div>
+
+                <div class="contact-item">
+                    <h4>Showroom</h4>
+                    <p>Visite sur rendez-vous uniquement<br>Présentation de toutes nos solutions<br>Démonstration acoustique en direct</p>
+                </div>
+            </div>
+
+            <form class="contact-form fade-in" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Prénom *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Nom *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Société</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="projectType">Type de Projet *</label>
+                    <select id="projectType" name="projectType" required>
+                        <option value="">Sélectionnez...</option>
+                        <option value="studio">Studio d'enregistrement</option>
+                        <option value="office">Bureau professionnel</option>
+                        <option value="residential">Résidentiel</option>
+                        <option value="medical">Cabinet médical</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Décrivez votre Projet *</label>
+                    <textarea id="message" name="message" required placeholder="Parlez-nous de vos besoins en isolation acoustique..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%;">Envoyer ma Demande</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>PORTE ACOUSTIQUE</h3>
+                <p>Leader français des solutions acoustiques professionnelles. Excellence technique, innovation et service client d'exception depuis plus de 20 ans.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#processus">Notre Processus</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Produits</h4>
+                <ul>
+                    <li><a href="#produits">Studio Pro</a></li>
+                    <li><a href="#produits">Office Plus</a></li>
+                    <li><a href="#produits">Home Confort</a></li>
+                    <li><a href="#produits">Sur-mesure</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Entreprise</h4>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Porte Acoustique. Tous droits réservés. | Conception et réalisation de portes acoustiques professionnelles</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                company: document.getElementById('company').value,
+                projectType: document.getElementById('projectType').value,
+                message: document.getElementById('message').value
+            };
+
+            console.log('Form submitted:', formData);
+            alert('Merci pour votre demande ! Notre équipe vous contactera dans les 24 heures.');
+            this.reset();
+        });
+
+        // Add animation to stats on scroll
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        stat.style.animation = 'fadeInUp 0.8s ease forwards';
+                    });
+                }
+            });
+        });
+
+        const statsBar = document.querySelector('.stats-bar');
+        if (statsBar) {
+            statsObserver.observe(statsBar);
+        }
+    </script>
+</body>
+</html>
