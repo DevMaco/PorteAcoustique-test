@@ -925,6 +925,26 @@ footer ul a:hover { color: #fff; }
     .price-table thead th { padding: 0.625rem 0.5rem; font-size: 0.8rem; }
     .price-table tbody td { padding: 0.5rem; }
     .pricing-section { padding: 1.5rem 1.25rem; }
+    #portes-simples, #doubles-portes { padding: 0 1.25rem; }
+}
+
+/* Tarifs — compact mobile (table sans scroll) */
+@media (max-width: 600px) {
+    #portes-simples, #doubles-portes { padding: 0 0.75rem; }
+    .price-table { min-width: 280px; }
+    .price-table .door-svg { display: none; }
+    .price-table thead th { font-size: 0.6875rem; padding: 0.5rem 0.3rem; letter-spacing: 0; }
+    .price-table thead th:first-child { width: auto; }
+    .price-table tbody td { padding: 0.375rem 0.3rem; font-size: 0.8rem; }
+    .price-table .col-product { font-size: 0.775rem; white-space: nowrap; }
+    .price-table .col-price { padding: 0.375rem 0.2rem; }
+    .price-table .col-price .price-val { font-size: 0.775rem; white-space: nowrap; }
+    .price-table tfoot td { padding: 0.35rem 0.2rem; }
+    .btn-devis-tbl { padding: 0.2rem 0.4rem; font-size: 0.6875rem; }
+    .pricing-title { font-size: 0.9375rem; }
+    .pricing-note { font-size: 0.75rem; }
+    .options-block { margin: 1rem 0; }
+    .options-block ul li { font-size: 0.8rem; }
 }
 
 @media (max-width: 520px) {
