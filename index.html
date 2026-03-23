@@ -25,6 +25,7 @@
             <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="produits.html">Produits</a></li>
             <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
             <li><a href="a-propos.html">A propos</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="nav-mobile-devis"><a href="devis.html">Devis gratuit &rarr;</a></li>
@@ -38,77 +39,60 @@
 
 <!-- Hero -->
 <section class="home-hero">
+    <img src="img/hero/task_01kme38q2yezf8hfhtw5ae45vq_1774294719_img_1.webp" alt="Porte acoustique professionnelle" class="hero-bg-img" loading="eager">
+    <div class="hero-bg-overlay"></div>
     <div class="home-hero-inner">
 
-        <!-- LEFT: texte + CTA -->
+        <!-- Texte + KPIs + CTA -->
         <div class="hero-text">
-            <div class="section-label" style="margin-bottom:0.75rem;">Isolation phonique 35 – 52 dB</div>
-            <h1>La Porte Acoustique<br><span>Sur Mesure</span></h1>
-            <p class="hero-subtitle">Portes acoustiques haute performance pour studio d'enregistrement, bureau, appartement ou salle de conf&eacute;rence. Fabrication fran&ccedil;aise, garantie 10 ans.</p>
+            <div class="section-label" style="margin-bottom:0.75rem;">Fabrication fran&ccedil;aise &middot; Garantie 10 ans &middot; Sur mesure</div>
+            <h1>La Porte Acoustique<br><span>Professionnelle</span></h1>
+            <p class="hero-subtitle">Portes acoustiques haute performance pour studio d&rsquo;enregistrement, bureau, cabinet m&eacute;dical ou r&eacute;sidence. Isolation certifi&eacute;e de 35 &agrave; 52 dB Rw.</p>
+
+            <!-- Grille de mesures techniques -->
+            <div class="hero-specs">
+                <div class="hero-spec">
+                    <div class="hero-spec-num">2&thinsp;040</div>
+                    <div class="hero-spec-unit">mm</div>
+                    <div class="hero-spec-lbl">Hauteur standard</div>
+                </div>
+                <div class="hero-spec">
+                    <div class="hero-spec-num">630–930</div>
+                    <div class="hero-spec-unit">mm</div>
+                    <div class="hero-spec-lbl">Largeurs standard</div>
+                </div>
+                <div class="hero-spec">
+                    <div class="hero-spec-num">68</div>
+                    <div class="hero-spec-unit">mm</div>
+                    <div class="hero-spec-lbl">&Eacute;paisseur vantail</div>
+                </div>
+                <div class="hero-spec spec-db">
+                    <div class="hero-spec-num">35–52</div>
+                    <div class="hero-spec-unit">dB Rw</div>
+                    <div class="hero-spec-lbl">Isolation certifi&eacute;e</div>
+                </div>
+            </div>
+
+            <!-- CTAs -->
             <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.75rem;">
                 <a href="devis.html" class="btn btn-orange btn-lg">Devis gratuit sous 24h</a>
                 <a href="produits.html" class="btn btn-primary btn-lg">Voir les mod&egrave;les</a>
             </div>
+
+            <!-- Téléphone -->
             <div class="hero-phone" style="margin-top:1.5rem;">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
                 <span>Appelez-nous au <strong>01 84 60 04 02</strong></span>
             </div>
-            <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem;">
-                <div style="font-size:0.8125rem;color:var(--text-light);display:flex;align-items:center;gap:0.4rem;">
-                    <span style="color:var(--orange);font-weight:700;">&#10003;</span> Fabrication fran&ccedil;aise
-                </div>
-                <div style="font-size:0.8125rem;color:var(--text-light);display:flex;align-items:center;gap:0.4rem;">
-                    <span style="color:var(--orange);font-weight:700;">&#10003;</span> Garantie 10 ans
-                </div>
-                <div style="font-size:0.8125rem;color:var(--text-light);display:flex;align-items:center;gap:0.4rem;">
-                    <span style="color:var(--orange);font-weight:700;">&#10003;</span> Sur mesure
-                </div>
+
+            <!-- Trust badges -->
+            <div class="hero-trust-row">
+                <div class="hero-trust-item"><span>&#10003;</span> Certifi&eacute; labo ind&eacute;pendant</div>
+                <div class="hero-trust-item"><span>&#10003;</span> Devis sous 24h</div>
+                <div class="hero-trust-item"><span>&#10003;</span> Pose disponible partout en France</div>
             </div>
         </div>
 
-        <!-- RIGHT: illustration SVG porte -->
-        <div class="hero-door-wrap" style="align-items:center;justify-content:center;">
-            <svg viewBox="0 0 340 480" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:380px;height:auto;display:block;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.13));">
-                <!-- Fond carte -->
-                <rect width="340" height="480" rx="6" fill="#f5f0e8"/>
-                <!-- Ombre portée porte -->
-                <rect x="52" y="22" width="236" height="436" rx="4" fill="rgba(0,0,0,0.07)"/>
-                <!-- Cadre dormant -->
-                <rect x="46" y="18" width="236" height="436" rx="3" fill="#c8bfb0" stroke="#b8afa0" stroke-width="1"/>
-                <!-- Ouverture / vantail -->
-                <rect x="62" y="32" width="204" height="408" fill="#ffffff" stroke="#e8e2d8" stroke-width="1" rx="2"/>
-                <!-- Biseaux du vantail -->
-                <rect x="65" y="35" width="198" height="402" fill="none" stroke="#f0ebe3" stroke-width="4" rx="1"/>
-                <!-- Panneau déco haut -->
-                <rect x="80" y="52" width="168" height="148" rx="2" fill="#faf8f4" stroke="#ddd6cc" stroke-width="1.5"/>
-                <rect x="85" y="57" width="158" height="138" rx="1" fill="none" stroke="#e8e2d8" stroke-width="0.8"/>
-                <!-- Panneau déco bas -->
-                <rect x="80" y="216" width="168" height="196" rx="2" fill="#faf8f4" stroke="#ddd6cc" stroke-width="1.5"/>
-                <rect x="85" y="221" width="158" height="186" rx="1" fill="none" stroke="#e8e2d8" stroke-width="0.8"/>
-                <!-- Paumelles (3) -->
-                <rect x="57" y="72" width="11" height="26" rx="1.5" fill="#c0b9ae" stroke="#b0a9a0" stroke-width="0.5"/>
-                <rect x="59" y="76" width="6" height="18" rx="1" fill="#cec7bc"/>
-                <rect x="57" y="225" width="11" height="26" rx="1.5" fill="#c0b9ae" stroke="#b0a9a0" stroke-width="0.5"/>
-                <rect x="59" y="229" width="6" height="18" rx="1" fill="#cec7bc"/>
-                <rect x="57" y="358" width="11" height="26" rx="1.5" fill="#c0b9ae" stroke="#b0a9a0" stroke-width="0.5"/>
-                <rect x="59" y="362" width="6" height="18" rx="1" fill="#cec7bc"/>
-                <!-- Poignée / rose -->
-                <rect x="239" y="218" width="12" height="40" rx="2" fill="#c4bdb4" stroke="#b4ada4" stroke-width="0.5"/>
-                <circle cx="245" cy="248" r="3.5" fill="#b0a9a0" stroke="#a09990" stroke-width="0.5"/>
-                <!-- Levier -->
-                <path d="M244 228 Q258 228 261 231 Q264 234 261 237 Q258 240 244 238 Z" fill="#cac3ba" stroke="#bab3aa" stroke-width="0.5"/>
-                <!-- Badge dB (orange) -->
-                <rect x="218" y="46" width="74" height="52" rx="4" fill="#d4650a"/>
-                <text x="255" y="76" text-anchor="middle" font-size="26" font-weight="900" fill="white" font-family="Inter,Arial,sans-serif">42</text>
-                <text x="255" y="88" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.85)" font-family="Inter,Arial,sans-serif">dB</text>
-                <!-- Joint acoustique bas (orange) -->
-                <rect x="62" y="435" width="204" height="5" rx="1" fill="#d4650a" opacity="0.85"/>
-                <!-- Label joint -->
-                <line x1="46" y1="437" x2="20" y2="390" stroke="#d4650a" stroke-width="0.8" opacity="0.5"/>
-                <text x="18" y="386" text-anchor="end" font-size="8" fill="#d4650a" font-family="Inter,Arial,sans-serif" font-weight="600">Joint acoustique</text>
-                <text x="18" y="396" text-anchor="end" font-size="8" fill="#d4650a" font-family="Inter,Arial,sans-serif">p&eacute;riph&eacute;rique</text>
-            </svg>
-        </div>
 
     </div>
 </section>
@@ -141,28 +125,28 @@
         <h2>Une solution pour chaque usage</h2>
         <div class="apps-grid">
             <div class="app-card">
-                <img src="img/studio.png" alt="Studio Musique">
+                <img src="img/Porte_acoustique studioenregistrement.png" alt="Studio Musique">
                 <div class="app-card-body">
                     <div class="app-card-title">Studio Musique</div>
                     <div class="app-card-desc">Isolation maximale 42–52 dB</div>
                 </div>
             </div>
             <div class="app-card">
-                <img src="img/Bureaux.png" alt="Bureaux">
+                <img src="img/Porte_acoustique moderne_dans_bureau.png" alt="Bureaux">
                 <div class="app-card-body">
                     <div class="app-card-title">Bureaux</div>
                     <div class="app-card-desc">Confidentialité professionnelle</div>
                 </div>
             </div>
             <div class="app-card">
-                <img src="img/Home_cinema.jpg" alt="Home Cinéma">
+                <img src="img/Porte_acoustique_Homecinema.png" alt="Home Cinéma">
                 <div class="app-card-body">
                     <div class="app-card-title">Home Cinéma</div>
                     <div class="app-card-desc">Expérience sonore immersive</div>
                 </div>
             </div>
             <div class="app-card">
-                <img src="img/Appartement.png" alt="Appartement">
+                <img src="img/Port_acoustique moderne_appart.png" alt="Appartement">
                 <div class="app-card-body">
                     <div class="app-card-title">Appartement</div>
                     <div class="app-card-desc">Confort résidentiel quotidien</div>
@@ -172,36 +156,232 @@
     </div>
 </div>
 
-<!-- Modèles dB -->
-<div class="models-section">
-    <div style="max-width:1200px;margin:0 auto;">
-        <div class="section-label" style="text-align:center;margin-bottom:0.5rem;">Nos modèles</div>
-        <h2 style="text-align:center;font-size:1.75rem;font-weight:800;margin-bottom:1.75rem;text-transform:uppercase;">Performances certifiées</h2>
-        <div class="models-grid">
-            <div class="model-card">
-                <div class="model-ref">ISO-DPO Plus</div>
-                <div class="model-db">35 <span>dB</span></div>
-                <p style="font-size:0.875rem;color:var(--text-light);">Double porte avec hublot. Idéale pour les bureaux et résidences nécessitant une isolation standard.</p>
-                <a href="produit-iso-dpo-plus.html" class="btn btn-outline-orange btn-sm">Voir le produit</a>
-            </div>
-            <div class="model-card">
-                <div class="model-ref">ISO-DPV Plus</div>
-                <div class="model-db">42 <span>dB</span></div>
-                <p style="font-size:0.875rem;color:var(--text-light);">Double porte vitrée. Performance acoustique élevée avec apport de lumière naturelle.</p>
-                <a href="produit-iso-dpv-plus.html" class="btn btn-outline-orange btn-sm">Voir le produit</a>
-            </div>
-            <div class="model-card">
-                <div class="model-ref">ISO-DP2V Plus</div>
-                <div class="model-db">47 <span>dB</span></div>
-                <p style="font-size:0.875rem;color:var(--text-light);">Double porte double vitrage. Isolation maximale pour studios d'enregistrement et salles de conférence.</p>
-                <a href="produit-iso-dp2v-plus.html" class="btn btn-outline-orange btn-sm">Voir le produit</a>
-            </div>
+<!-- Produits vedettes -->
+<section class="section" id="produits-vedettes">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Nos produits</div>
+            <h2 class="section-title">Découvrez Notre Gamme</h2>
+            <p class="section-desc">Portes simples et doubles portes acoustiques, de 40 à 52 dB d'isolation — fabrication française, sur mesure.</p>
         </div>
-        <div style="text-align:center;margin-top:1.75rem;">
-            <a href="produits.html" class="btn btn-primary">Voir tous les produits</a>
+
+        <!-- Portes simples -->
+        <div style="margin-bottom:1rem;">
+            <h3 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--orange);margin-bottom:1.25rem;">Portes Simples</h3>
+        </div>
+        <div class="products-grid" style="margin-bottom:2.5rem;">
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images_agenererplustard/IMG_6274-e1475179363732.jpg" alt="ISO-PS Plus">
+                    <span class="product-badge">42 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-PS Plus</div>
+                    <div class="product-type">Porte simple pleine</div>
+                    <div class="product-from">À partir de 1 186 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>42 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>630 &ndash; 930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-ps-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#portes-simples" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images_agenererplustard/IMG_6256-scaled.jpg" alt="ISO-PV Plus">
+                    <span class="product-badge">40 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-PV Plus</div>
+                    <div class="product-type">Porte simple vitrée</div>
+                    <div class="product-from">À partir de 1 576 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>40 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>630 &ndash; 930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-pv-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#portes-simples" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images_agenererplustard/IMG_5763.jpg" alt="ISO-P2V Plus">
+                    <span class="product-badge">40 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-P2V Plus</div>
+                    <div class="product-type">Porte simple double vitrage</div>
+                    <div class="product-from">À partir de 1 598 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>40 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>630 &ndash; 930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-p2v-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#portes-simples" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images_agenererplustard/IMG_6250-scaled.jpg" alt="ISO-PO Plus">
+                    <span class="product-badge">40 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-PO Plus</div>
+                    <div class="product-type">Porte simple avec hublot</div>
+                    <div class="product-from">À partir de 1 579 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>40 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>630 &ndash; 930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-po-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#portes-simples" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Doubles portes -->
+        <div style="margin-bottom:1rem;">
+            <h3 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--orange);margin-bottom:1.25rem;">Doubles Portes</h3>
+        </div>
+        <div class="products-grid" style="margin-bottom:2rem;">
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <svg width="100" height="130" viewBox="0 0 55 60" style="margin:auto;display:block;">
+                        <rect x="1" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <rect x="29" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <circle cx="22" cy="32" r="2" fill="#8b4508"/>
+                        <circle cx="33" cy="32" r="2" fill="#8b4508"/>
+                    </svg>
+                    <span class="product-badge">52 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-DPS Plus</div>
+                    <div class="product-type">Double porte pleine</div>
+                    <div class="product-from">À partir de 2 110 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>52 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>1230 &ndash; 1930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-dps-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#doubles-portes" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <svg width="100" height="130" viewBox="0 0 55 60" style="margin:auto;display:block;">
+                        <rect x="1" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <rect x="29" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <rect x="5" y="8" width="17" height="18" rx="1" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <rect x="33" y="8" width="17" height="18" rx="1" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <circle cx="22" cy="42" r="2" fill="#8b4508"/>
+                        <circle cx="33" cy="42" r="2" fill="#8b4508"/>
+                    </svg>
+                    <span class="product-badge">48 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-DPV Plus</div>
+                    <div class="product-type">Double porte vitrée</div>
+                    <div class="product-from">À partir de 2 740 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>48 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>1230 &ndash; 1930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-dpv-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#doubles-portes" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <svg width="100" height="130" viewBox="0 0 55 60" style="margin:auto;display:block;">
+                        <rect x="1" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <rect x="29" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <rect x="4" y="8" width="8" height="26" rx="1" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <rect x="15" y="8" width="8" height="26" rx="1" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <rect x="32" y="8" width="8" height="26" rx="1" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <rect x="43" y="8" width="8" height="26" rx="1" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <circle cx="22" cy="46" r="2" fill="#8b4508"/>
+                        <circle cx="33" cy="46" r="2" fill="#8b4508"/>
+                    </svg>
+                    <span class="product-badge">48 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-DP2V Plus</div>
+                    <div class="product-type">Double porte double vitrage</div>
+                    <div class="product-from">À partir de 2 783 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>48 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>1230 &ndash; 1930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-dp2v-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#doubles-portes" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-img">
+                    <svg width="100" height="130" viewBox="0 0 55 60" style="margin:auto;display:block;">
+                        <rect x="1" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <rect x="29" y="1" width="25" height="58" rx="1" fill="#d4700a" stroke="#a35508" stroke-width="1"/>
+                        <circle cx="13.5" cy="22" r="8" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <circle cx="41.5" cy="22" r="8" fill="#b8d4e8" stroke="#a35508" stroke-width="0.5"/>
+                        <circle cx="22" cy="46" r="2" fill="#8b4508"/>
+                        <circle cx="33" cy="46" r="2" fill="#8b4508"/>
+                    </svg>
+                    <span class="product-badge">48 dB</span>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-name">ISO-DPO Plus</div>
+                    <div class="product-type">Double porte avec hublots</div>
+                    <div class="product-from">À partir de 2 953 &euro; HT</div>
+                    <ul class="product-card-specs">
+                        <li><span>Isolation</span><span>48 dB Rw</span></li>
+                        <li><span>Largeurs</span><span>1230 &ndash; 1930 mm</span></li>
+                        <li><span>Hauteur</span><span>2 040 mm</span></li>
+                    </ul>
+                    <div class="product-card-actions">
+                        <a href="produit-iso-dpo-plus.html" class="btn btn-secondary btn-sm">Voir plus</a>
+                        <a href="tarifs.html#doubles-portes" class="btn btn-primary btn-sm">Tarifs</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:0.5rem;">
+            <a href="produits.html" class="btn btn-primary btn-lg">Voir la gamme complète &rarr;</a>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Pourquoi nous -->
 <section class="section bg-warm">
@@ -285,6 +465,7 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="produits.html">Produits</a></li>
                 <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="a-propos.html">A propos</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
